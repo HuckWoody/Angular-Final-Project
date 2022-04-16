@@ -1,0 +1,15 @@
+<hr>
+<h3> Selected Task: {{currentTask.firstName}}</h3>
+<hr>
+<div>
+    <p>First Name: {{currentTask.firstName}}</p>
+
+    <p>Task Name: {{currentTask.taskName}}</p>
+    <button (click)="deleteTask(currentTask.id)">Delete Task</button>
+
+</div>
+<a routerLink="/edit/{{currentTask.id}}">
+    <button>
+        Edit Contact
+    </button>
+</a>

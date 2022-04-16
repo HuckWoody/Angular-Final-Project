@@ -1,0 +1,12 @@
+<hr>
+<h3>Edit Task | {{editTask.firstName}}</h3>
+<hr>
+<form (ngSubmit) = "updateTask()">
+    <label> First Name</label>
+    <input type="text" name = "firstName" [(ngModel)] = "editTask.firstName">
+    <br>
+    <label> Task Name</label>
+    <input type="text" name = "taskName" [(ngModel)] = "editTask.taskName">
+    <br>
+    <button type="submit">EDIT</button>
+</form>
